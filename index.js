@@ -1,12 +1,15 @@
 const express=require("express");
 const { connection } = require("mongoose");
 const travelRouter = require("./routes/travel.routes");
+const CORS=require("cors");
 require('dotenv').config()
 
 const port=process.env.PORT || 3030;
 
 const app=express()
 app.use(express.json())
+
+app.use(CORS());
 
 app.use("/travel", travelRouter)
 

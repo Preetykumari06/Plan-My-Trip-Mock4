@@ -14,3 +14,11 @@ const TravelModel=mongoose.model("travel", TravelSchema)
 
 
 module.exports=TravelModel
+
+
+
+    // name: ,
+    // email:,
+    // destination:,
+    // No_of_travelers:,
+    // budget_per_person:
